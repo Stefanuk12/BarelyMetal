@@ -3,15 +3,15 @@
     "autovirt": {
       "flake": false,
       "locked": {
-        "lastModified": 1772738088,
-        "narHash": "sha256-rmUfGWxz0Z2Lwmdvyt5oHNOzZGndyusWwu7TnFq1qC4=",
-        "owner": "Scrut1ny",
+        "lastModified": 1775325431,
+        "narHash": "sha256-8e2owj3ZYbzx6JrqZxn2QO7sPJf+Km6b8V/Y+mIGFfg=",
+        "owner": "Stefanuk12",
         "repo": "AutoVirt",
-        "rev": "00ec7153c06184a36f028559fec3ae0e6051cbf6",
+        "rev": "0b642aa3c4cc5d5a79f0e5c8aa78daa2e7ebe6da",
         "type": "github"
       },
       "original": {
-        "owner": "Scrut1ny",
+        "owner": "Stefanuk12",
         "repo": "AutoVirt",
         "type": "github"
       }
@@ -35,11 +35,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1772963539,
-        "narHash": "sha256-9jVDGZnvCckTGdYT53d/EfznygLskyLQXYwJLKMPsZs=",
+        "lastModified": 1775036866,
+        "narHash": "sha256-ZojAnPuCdy657PbTq5V0Y+AHKhZAIwSIT2cb8UgAz/U=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "9dcb002ca1690658be4a04645215baea8b95f31d",
+        "rev": "6201e203d09599479a3b3450ed24fa81537ebc4e",
         "type": "github"
       },
       "original": {
