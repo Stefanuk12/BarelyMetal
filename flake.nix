@@ -5,7 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     autovirt = {
-      url = "github:Scrut1ny/AutoVirt";
+      url = "github:Stefanuk12/AutoVirt";
       flake = false;
     };
 
