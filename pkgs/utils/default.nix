@@ -35,7 +35,6 @@ stdenv.mkDerivation {
 
     cp ${autovirt}/resources/scripts/Linux/evdev-auto.sh $out/share/barely-metal/scripts/
     cp ${autovirt}/resources/scripts/Linux/vbios-dumper.sh $out/share/barely-metal/scripts/
-    cp ${autovirt}/resources/scripts/Linux/msr_check.py $out/share/barely-metal/scripts/
 
     chmod +x $out/share/barely-metal/scripts/*.sh
 
@@ -54,10 +53,6 @@ stdenv.mkDerivation {
         coreutils
         pciutils
       ]}
-
-    # msr_check: scans MSR ranges for hypervisor signatures
-    makeWrapper ${python3}/bin/python3 $out/bin/barely-metal-msr-check \
-      --add-flags "$out/share/barely-metal/scripts/msr_check.py"
   '';
 
   meta = {

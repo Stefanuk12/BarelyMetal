@@ -16,9 +16,9 @@ python3.pkgs.buildPythonApplication {
 
   installPhase = ''
     mkdir -p $out/bin $out/share/barely-metal
-    cp ${autovirt}/resources/scripts/Linux/smbios_spoofer_cli.py $out/share/barely-metal/
+    cp ${autovirt}/resources/scripts/Linux/SMBIOS.py $out/share/barely-metal/
     makeWrapper ${python3}/bin/python3 $out/bin/barely-metal-smbios-spoofer \
-      --add-flags "$out/share/barely-metal/smbios_spoofer_cli.py"
+      --add-flags "$out/share/barely-metal/SMBIOS.py"
   '';
 
   meta = {

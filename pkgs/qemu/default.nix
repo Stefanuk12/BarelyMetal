@@ -21,9 +21,9 @@ let
   cpuLower = lib.toLower cpu;
   patchFile =
     if cpuLower == "amd" then
-      "${autovirt}/patches/QEMU/AMD-v10.2.0.patch"
+      "${autovirt}/patches/QEMU/AMD-v11.0.0.patch"
     else
-      "${autovirt}/patches/QEMU/Intel-v10.2.0.patch";
+      "${autovirt}/patches/QEMU/Intel-v11.0.0.patch";
 
   selectedIdeModel =
     if ideModel != null then ideModel else "Samsung SSD 870 EVO 1TB";

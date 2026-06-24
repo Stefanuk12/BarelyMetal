@@ -3,15 +3,15 @@
     "autovirt": {
       "flake": false,
       "locked": {
-        "lastModified": 1775325431,
-        "narHash": "sha256-8e2owj3ZYbzx6JrqZxn2QO7sPJf+Km6b8V/Y+mIGFfg=",
-        "owner": "Stefanuk12",
+        "lastModified": 1781413829,
+        "narHash": "sha256-oejSjvSlIpQL6JE8mR8B9KCy90V8kDPeO8UFrn0McVg=",
+        "owner": "Scrut1ny",
         "repo": "AutoVirt",
-        "rev": "0b642aa3c4cc5d5a79f0e5c8aa78daa2e7ebe6da",
+        "rev": "267ec3effbaf49ca43ad27c9c01dcc9859cebc2c",
         "type": "github"
       },
       "original": {
-        "owner": "Stefanuk12",
+        "owner": "Scrut1ny",
         "repo": "AutoVirt",
         "type": "github"
       }
@@ -19,27 +19,27 @@
     "edk2-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1770983746,
-        "narHash": "sha256-rdRn1waCZ9h83cZR5cQFLNuvUKMS236PjuDQ0WHNlGs=",
+        "lastModified": 1778208179,
+        "narHash": "sha256-w1tRqgAGxhzPUfJafbWpNjLlMK/dVAwcIAmV4xTnjOo=",
         "owner": "tianocore",
         "repo": "edk2",
-        "rev": "b7a715f7c03c45c6b4575bf88596bfd79658b8ce",
+        "rev": "b03a21a63e3bd001f52c527e5a57feddb53a690b",
         "type": "github"
       },
       "original": {
         "owner": "tianocore",
-        "ref": "edk2-stable202602",
+        "ref": "edk2-stable202605",
         "repo": "edk2",
         "type": "github"
       }
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1775036866,
-        "narHash": "sha256-ZojAnPuCdy657PbTq5V0Y+AHKhZAIwSIT2cb8UgAz/U=",
+        "lastModified": 1781577229,
+        "narHash": "sha256-lrp67w8AulE9Ks53n27I45ADSzbOCn4H+CNW1Ck8B+8=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "6201e203d09599479a3b3450ed24fa81537ebc4e",
+        "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
         "type": "github"
       },
       "original": {
@@ -52,16 +52,16 @@
     "qemu-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1766461447,
-        "narHash": "sha256-Ucd7iMQN7bE/IPwc4ZXMIplC0Bo5LTfLY8j34Zze8og=",
+        "lastModified": 1776785327,
+        "narHash": "sha256-4FYzPBmnaAfrqqywtKpYFqpzi8Phd64iQZ4qDyNDOoY=",
         "owner": "qemu-project",
         "repo": "qemu",
-        "rev": "698104725efad4b29079d857dfdebbd804e34c99",
+        "rev": "98b060da3a4f92b2a994ead5b16a87e783baf77c",
         "type": "gitlab"
       },
       "original": {
         "owner": "qemu-project",
-        "ref": "v10.2.0",
+        "ref": "v11.0.0",
         "repo": "qemu",
         "type": "gitlab"
       }

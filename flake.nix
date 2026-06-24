@@ -5,17 +5,17 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     autovirt = {
-      url = "github:Stefanuk12/AutoVirt";
+      url = "github:Scrut1ny/AutoVirt";
       flake = false;
     };
 
     qemu-src = {
-      url = "gitlab:qemu-project/qemu/v10.2.0";
+      url = "gitlab:qemu-project/qemu/v11.0.0";
       flake = false;
     };
 
     edk2-src = {
-      url = "github:tianocore/edk2/edk2-stable202602";
+      url = "github:tianocore/edk2/edk2-stable202605";
       flake = false;
     };
   };

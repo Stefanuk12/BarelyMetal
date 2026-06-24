@@ -31,16 +31,16 @@ let
   cpuLower = lib.toLower cpu;
   patchFile =
     if cpuLower == "amd" then
-      "${autovirt}/patches/EDK2/AMD-edk2-stable202602.patch"
+      "${autovirt}/patches/EDK2/AMD-edk2-stable202605.patch"
     else
-      "${autovirt}/patches/EDK2/Intel-edk2-stable202602.patch";
+      "${autovirt}/patches/EDK2/Intel-edk2-stable202605.patch";
 
   pythonEnv = buildPackages.python3.withPackages (ps: [ ps.distlib ]);
   targetArch = "X64";
 in
 stdenv.mkDerivation {
   pname = "barely-metal-ovmf";
-  version = "202602-barely-metal";
+  version = "202605-barely-metal";
 
   src = edk2.src;
 
