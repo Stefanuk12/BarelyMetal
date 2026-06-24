@@ -61,7 +61,11 @@ stdenv.mkDerivation {
     "fortify"
   ];
 
-  env.GCC5_X64_PREFIX = stdenv.cc.targetPrefix;
+  # edk2-stable202405+ dropped the per-version GCC5 toolchain tag for a unified
+  # "GCC" tag whose cross prefix is read from ENV(GCC_BIN). Set both vars to
+  # match nixpkgs' own edk2 builder.
+  env.GCC_BIN = stdenv.cc.targetPrefix;
+  env.GCC_X64_PREFIX = stdenv.cc.targetPrefix;
 
   prePatch = ''
     rm -rf BaseTools
@@ -139,7 +143,7 @@ stdenv.mkDerivation {
     build \
       -p OvmfPkg/OvmfPkgX64.dsc \
       -a ${targetArch} \
-      -t GCC5 \
+      -t GCC \
       -b RELEASE \
       -n $NIX_BUILD_CORES \
       -s \
@@ -157,9 +161,9 @@ stdenv.mkDerivation {
     runHook preInstall
 
     mkdir -p $out/FV
-    cp -v Build/OvmfX64/RELEASE_GCC5/FV/OVMF_CODE.fd $out/FV/
-    cp -v Build/OvmfX64/RELEASE_GCC5/FV/OVMF_VARS.fd $out/FV/
-    cp -v Build/OvmfX64/RELEASE_GCC5/FV/OVMF.fd $out/FV/
+    cp -v Build/OvmfX64/RELEASE_GCC/FV/OVMF_CODE.fd $out/FV/
+    cp -v Build/OvmfX64/RELEASE_GCC/FV/OVMF_VARS.fd $out/FV/
+    cp -v Build/OvmfX64/RELEASE_GCC/FV/OVMF.fd $out/FV/
 
     runHook postInstall
   '';
